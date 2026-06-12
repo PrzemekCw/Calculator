@@ -1,5 +1,5 @@
 import tkinter as tk
-
+import functions as f
 
 
 root = tk.Tk()
@@ -17,7 +17,7 @@ button_divide = tk.Button(root, text="/",width=7, height=2).grid(row=4, column=3
 button_multiply = tk.Button(root, text="*",width=7, height=2).grid(row=5, column=3)
 button_subtract = tk.Button(root, text="-",width=7, height=2).grid(row=2, column=3)
 button_add = tk.Button(root, text="+",width=7, height=2).grid(row=3, column=3)
-button_equals = tk.Button(root, text="=",width=16, height=2).grid(row=6, column=2, columnspan=2)
+button_equals = tk.Button(root, text="=",width=16, height=2, command=lambda: print(f.add(5,6))).grid(row=6, column=2, columnspan=2)
 button_decimal = tk.Button(root, text=".",width=7, height=2).grid(row=6, column=1)
 
 ### Number buttons
